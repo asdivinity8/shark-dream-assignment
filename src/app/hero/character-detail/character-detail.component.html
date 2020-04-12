@@ -1,0 +1,14 @@
+<h2 class="detail-header">Here is your favourite Star Wars Character</h2>
+<div class="wrapper">
+    <div *ngIf="character$ | async as hero" class="hero-container">
+        <div><img src="{{hero.image}}" class="hero-image" /></div>
+        <div class="description">
+            <h3>{{ hero.name }}</h3>
+            <p class="hero-detail">{{hero.description}}</p>
+        </div>
+        <p>
+            <button (click)="goToTable(hero)">Back</button>
+          </p>
+
+    </div>
+</div>

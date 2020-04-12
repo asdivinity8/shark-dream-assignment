@@ -1,0 +1,44 @@
+.detail-header {
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.hero-container {
+    display: grid;
+}
+
+.hero-image {
+    width: 100%;
+    margin-bottom: 20px;;
+}
+
+.description h3 {
+    margin: 0;
+}
+
+.hero-detail {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        display: grid;
+        grid-template-columns: 50% 45%;
+        grid-gap: 25px;
+    }
+
+    .hero-image {
+        margin-bottom: 0;;
+    }
+}

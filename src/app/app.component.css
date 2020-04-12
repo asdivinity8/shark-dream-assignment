@@ -1,0 +1,60 @@
+.app-navigation {
+    width: 100%;
+    background-color: #333;
+}
+
+.mobile-menu{
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile-menu:hover + .app-navigation,
+.mobile-menu:focus + .app-navigation{
+    display: block;
+}
+
+ul.desktop-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 50px;
+    display: block;
+}
+
+.active{
+    background-color: #B22222;
+    color: #fff;
+}
+
+.app-navigation{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .app-navigation{
+        display: block;
+        padding: 20px 0;
+    }
+
+    li{
+        display: inline;
+    }
+
+    .app-navigation a {
+        display: inline;
+    }
+}

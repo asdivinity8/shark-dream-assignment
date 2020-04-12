@@ -1,0 +1,14 @@
+.mat-elevation-z8 {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+table {
+    width: 100%;
+  }
+
+.row-link:hover, .row-link:focus{
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
